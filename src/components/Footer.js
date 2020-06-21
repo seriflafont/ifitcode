@@ -1,4 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import youtube from '../assets/icons/youtube.png';
+import fb from '../assets/icons/facebook.png';
+import tw from  '../assets/icons/twitter.png';
+import pin from '../assets/icons/pinterest.png';
+import insta from '../assets/icons/instagram.png';
 import styles from './Footer.module.css';
 
 
@@ -40,11 +45,11 @@ export default class Footer extends Component {
                     </dl>
                 </div>
                 <ul className={styles.social+" flex-ul"}>
-                    <li>Link</li>
-                    <li>Link</li>
-                    <li>Link</li>
-                    <li>Link</li>
-                    <li>Link</li>
+                    <li><a href="http://www.youtube.com"><img src={youtube} alt="youtube" /></a></li>
+                    <li><a href="http://www.pinterest.com"><img src={pin} alt="pinterest" /></a></li>
+                    <li><a href="http://www.facebook.com"><img src={fb} alt="facebook" /></a></li>
+                    <li><a href="http://www.twitter.com"><img src={tw} alt="twitter" /></a></li>
+                    <li><a href="http://www.instagram.com"><img src={insta} alt="instagram" /></a></li>
                 </ul>
                 <select className={styles.langbutton} value={this.state.lang} onChange={this.handleLanguageChange}>
                     <option value="English">English</option>
@@ -53,7 +58,7 @@ export default class Footer extends Component {
                     <option value="Chinese">Chinese</option>
                 </select>
                 <ul className={styles.legal+" flex-ul"}>
-                    <li>© copyright</li>
+                    <li>© iFit.com. All Rights Reserved.</li>
                     <li>Privacy Policy</li>
                     <li>Terms of Use</li>
                 </ul>

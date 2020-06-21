@@ -5,8 +5,6 @@ import fpobikes from '../assets/equipment/bikes.png';
 import fpoellipticals from '../assets/equipment/elliptical.png';
 import fpostrength from '../assets/equipment/strength.png';
 
-
-
 export default function Equipment() {
     return (
       <div className={styles.equipmentwrapper + " module-wrapper"}>

@@ -41,7 +41,45 @@
     border-bottom:1px solid var(--color-grey);
     border-top:1px solid var(--color-grey);
 }
+.social li{
+    position:relative;
+}
 
+.social a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #2196F3, #00e4a5);
+    display: block;
+    position: relative;
+}
+.social a:after{
+    position:absolute;
+    display:block;
+    top:2px;
+    left:2px;
+    width:calc(100% - 4px);
+    height:calc(100% - 4px);
+    background:var(--color-black);
+    content:'';
+    border-radius:50%;
+    transition: all .2s linear;
+}
+.social a:hover:after{
+    top:4px;
+    left:4px;
+    width:calc(100% - 8px);
+    height:calc(100% - 8px);
+}
+
+.social img{
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 1;
+}
 
 .langbutton{
     position: absolute;

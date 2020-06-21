@@ -14,39 +14,39 @@ const cards = [
         avatarsrc:fpoavatar
     },
     {
-        imgsrc:fpoimg,//http://placekitten.com/200/300
+        imgsrc:'https://placeimg.com/288/164',
         title:'Performance Series',
-        avatarsrc:fpoavatar
+        avatarsrc:'https://placeimg.com/48/48'
     },{
-        imgsrc:fpoimg,
+        imgsrc:'https://placeimg.com/288/164/people',
         title:'Slow Pulls and Fast Intervals',
         time:'44:12',
         distance:'9.948M',
-        avatarsrc:fpoavatar
+        avatarsrc:'https://placeimg.com/48/48/people'
     },{
-        imgsrc:fpoimg,
+        imgsrc:'https://placeimg.com/288/165/nature',
         title:'20 Minutes to Toned',
-        avatarsrc:fpoavatar
+        avatarsrc:'https://placeimg.com/48/48/nature'
     },{
-        imgsrc:fpoimg,
+        imgsrc:'https://placeimg.com/288/164/tech',
         title:'Charles Race, Boston, Massachusetts',
         time:'30:53',
         distance:'6.24M',
-        avatarsrc:fpoavatar
+        avatarsrc:'https://placeimg.com/48/48/animals'
     },{
-        imgsrc:fpoimg,
+        imgsrc:'https://placeimg.com/288/164/nature',
         title:'Full-Body HIIT Series',
-        avatarsrc:fpoavatar
+        avatarsrc:'https://placeimg.com/48/48/nature'
     },{
-        imgsrc:fpoimg,
+        imgsrc:'https://placeimg.com/289/164/nature',
         title:'Kafue River, Zambia - Power Stroke Pyramid',
         time:'30:53',
         distance:'6.24M',
-        avatarsrc:fpoavatar
+        avatarsrc:'https://placeimg.com/48/48/tech'
     },{
-        imgsrc:fpoimg,
-        title:'Shref & Burn Series',
-        avatarsrc:fpoavatar
+        imgsrc:'https://placeimg.com/290/164/nature',
+        title:'Shred & Burn Series',
+        avatarsrc:'https://placeimg.com/48/48'
     }
 ];
 
@@ -80,10 +80,10 @@ export class Card extends Component {
                         {timesnippet}
                         {distancesnippet}
                     </p>
-                    <p className={styles.hover}>View Details</p>
+                    <img className={styles.avatar} src={this.props.avatarsrc} alt="avatar" />
                 </div>
-                <img className={styles.avatar} src={this.props.avatarsrc} alt="avatar" />
-            </a>
+                <p className={styles.hover}>View Details</p>
+           </a>
          </li>
         )
     }
