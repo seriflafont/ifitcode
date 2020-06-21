@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
 import styles from './CustomerCarousel.module.css';
-import fpologo from '../assets/testimonial-logos/gearjunkie-vector-logo.svg';
+import fpogjlogo from '../assets/testimonial-logos/gearjunkie-vector-logo.svg';
+import fpomashablelogo from '../assets/testimonial-logos/mashable_logo.svg';
+import fpowiredlogo from '../assets/testimonial-logos/wired_logo.svg';
 import careticon from '../assets/icons/chevron-right.svg';
 
 const testimonials = [
     {
-        imgsrc:fpologo,
-        copy:'"1 You focus on putting in the work, and the technology handles the rest."'
+        imgsrc:fpogjlogo,
+        copy:'"You focus on putting in the work, and the technology handles the rest."'
     },{
-        imgsrc:fpologo,
-        copy:'"2 Literally transports you from home to wherever you choose to run."'
+        imgsrc:fpowiredlogo,
+        copy:'"Literally transports you from home to wherever you choose to run."'
     },{
-        imgsrc:fpologo,
-        copy:'"3 You focus on putting in the work, and the technology handles the rest."'
+        imgsrc:fpomashablelogo,
+        copy:'"Breathes new life into a tired, old running routine."'
     },{
-        imgsrc:fpologo,
-        copy:'"4 You focus on putting in the work, and the technology handles the rest."'
+        imgsrc:fpogjlogo,
+        copy:'"You focus on putting in the work, and the technology handles the rest."'
     },{
-        imgsrc:fpologo,
-        copy:'"5 You focus on putting in the work, and the technology handles the rest."'
+        imgsrc:fpowiredlogo,
+        copy:'"Literally transports you from home to wherever you choose to run."'
     }
 ];
 

@@ -12,7 +12,6 @@ body {
 
 p{
     font-size:var(--font-size-1);
-    /* line-height: calc(var(--font-size-1)*2); */
 }
 ul, dl{
     list-style:none;

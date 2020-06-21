@@ -23,10 +23,29 @@
     align-self:center;
 }
 
-
+.herocontent h1{
+    font-size:var(--hero-font-size);
+    line-height:var(--hero-line-height);
+    color:var(--color-white);
+    width:60%;
+    margin:0 auto var(--global-module-pad);
+}
+.herocontent button{
+    padding-right:var(--global-module-pad);
+    padding-left:var(--global-module-pad);
+    font-size: var(--font-size-0);
+    font-weight: 600;
+}
 
 @media screen and (max-width: 900px) { /*basically mobile*/
     .herowrapper{
         height:55vh;
+    }
+
+}
+@media screen and (max-width: 500px) { /*basically mobile*/
+
+    .herocontent h1{
+        width:80%;
     }
 }
