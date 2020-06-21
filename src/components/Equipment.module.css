@@ -5,4 +5,27 @@
 
 .equipment li{
     flex-grow:1;
+    width:calc(25% - var(--card-margin) * 2);
+}
+.equipment img{
+    max-width: 100%;
+    width: 60%;
+    display: block;
+    margin: var(--global-module-pad) auto;
+}
+.equipment strong{
+    display: block;
+    margin-bottom: var(--global-module-pad);
+}
+
+
+@media screen and (max-width: 900px) { /*basically mobile*/
+    .equipment li{
+        width:calc(50% - var(--card-margin) * 2);
+    }
+}
+@media screen and (max-width: 500px) { /*basically mobile*/
+    .equipment li{
+        width:calc(100% - var(--card-margin) * 2);
+    }
 }

@@ -1,0 +1,32 @@
+.herowrapper{
+    height:75vh;
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+}
+.heroimage, .herocontent{
+    width:100%;
+    text-align:center;
+}
+
+.heroimage{
+    position:absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.herocontent{
+    align-self:center;
+}
+
+
+
+@media screen and (max-width: 900px) { /*basically mobile*/
+    .herowrapper{
+        height:55vh;
+    }
+}

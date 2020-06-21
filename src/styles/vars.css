@@ -4,6 +4,7 @@
     --color-black: #585A5D;
     --color-white: #ffffff;
     --color-lightgrey:#F4F5F7;
+    --color-ui:rgba(0, 12, 40, 0.8);
     --global-element-pad: 10px;
 
     --global-layout-pad:0px;

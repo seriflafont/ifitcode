@@ -14,7 +14,7 @@ const cards = [
         avatarsrc:fpoavatar
     },
     {
-        imgsrc:fpoimg,
+        imgsrc:fpoimg,//http://placekitten.com/200/300
         title:'Performance Series',
         avatarsrc:fpoavatar
     },{
@@ -26,8 +26,6 @@ const cards = [
     },{
         imgsrc:fpoimg,
         title:'20 Minutes to Toned',
-        time:'30:53',
-        distance:'6.24M',
         avatarsrc:fpoavatar
     },{
         imgsrc:fpoimg,
@@ -38,8 +36,6 @@ const cards = [
     },{
         imgsrc:fpoimg,
         title:'Full-Body HIIT Series',
-        time:'30:53',
-        distance:'6.24M',
         avatarsrc:fpoavatar
     },{
         imgsrc:fpoimg,
@@ -50,23 +46,29 @@ const cards = [
     },{
         imgsrc:fpoimg,
         title:'Shref & Burn Series',
-        time:'30:53',
-        distance:'6.24M',
         avatarsrc:fpoavatar
     }
 ];
 
 export class Card extends Component {
-    constructor(props){
-        super(props);
-    }
+    
     render() {
-        // const timesnippet, distancesnippet = '';
-        // if(this.props.time){
-        //     timesnippet = return (
-        //         <img src={iconwatch} alt="watch icon" className={styles.icon} /> {this.props.time}
-        //     )
-        // }
+        var timesnippet = null;
+        var distancesnippet = null;
+        if(this.props.time){
+            timesnippet = (
+                <>
+                <img src={iconwatch} alt="watch icon" className={styles.icon} /> {this.props.time}
+                </>
+            )
+        }
+        if(this.props.distance){
+            distancesnippet = (
+                <>
+                <img src={icondistance} alt="distance icon" className={styles.icon} /> {this.props.distance}
+                </>
+            )
+        }
         return (
             <li className="card">
                 <a href="https://mcnally.info" title="title would go here">
@@ -75,8 +77,8 @@ export class Card extends Component {
                 <div className={styles.content}>
                     <p>
                         <strong>{this.props.title}</strong>
-                        <img src={iconwatch} alt="watch icon" className={styles.icon} /> {this.props.time}
-                        <img src={icondistance} alt="distance icon" className={styles.icon} /> {this.props.distance}
+                        {timesnippet}
+                        {distancesnippet}
                     </p>
                     <p className={styles.hover}>View Details</p>
                 </div>

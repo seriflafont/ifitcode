@@ -46,17 +46,17 @@ export default class Footer extends Component {
                     <li>Link</li>
                     <li>Link</li>
                 </ul>
-                <ul className={styles.legal+" flex-ul"}>
-                    <li>© copyright</li>
-                    <li>Privacy Policy</li>
-                    <li>Terms of Use</li>
-                </ul>
                 <select className={styles.langbutton} value={this.state.lang} onChange={this.handleLanguageChange}>
                     <option value="English">English</option>
                     <option value="German">German</option>
                     <option value="Spanish">Spanish</option>
                     <option value="Chinese">Chinese</option>
                 </select>
+                <ul className={styles.legal+" flex-ul"}>
+                    <li>© copyright</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Use</li>
+                </ul>
             </footer>
         )
     }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import Hero from './components/Hero';
 import CustomerCarousel from './components/CustomerCarousel';
 import EventsGrid from './components/EventsGrid';
 import Equipment from './components/Equipment';
@@ -11,13 +12,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="hero-wrapper module-wrapper">
-        <div className="hero-image"></div>
-        <div className="hero-content">
-          <h1>The right personal training, right in your own home</h1>
-          <button>Join iFit Coach</button>
-        </div>
-      </div>
+      <Hero />
       <CustomerCarousel />
       <EventsGrid />
       <Equipment />

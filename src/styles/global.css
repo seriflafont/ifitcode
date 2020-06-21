@@ -103,19 +103,3 @@ button:hover{
     margin: var(--card-margin);
     background:var(--color-white);
 }
-
-
-/*hero comp*/
-.hero-wrapper{
-    height:60vh;
-    display:flex;
-    flex-wrap:wrap;
-}
-.hero-wrapper .hero-image, .hero-wrapper .hero-content{
-    width:100%;
-    text-align:center;
-}
-
-
-
-/* */
