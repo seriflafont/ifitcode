@@ -1,0 +1,69 @@
+:root {
+    --color-hilite: #0069D2;
+    --color-grey: #D5D6D6;
+    --color-black: #585A5D;
+    --color-white: #ffffff;
+    --color-lightgrey:#F4F5F7;
+    --global-element-pad: 10px;
+
+    --global-layout-pad:0px;
+    --global-module-pad:50px;
+
+    --serif-font: 'Open Sans', serif;
+    --sans-font: 'Open Sans', sans-serif;
+
+
+    /* layout */
+    --top-nav-a-hpad:40px;
+    --top-nav-a-vpad:20px;
+
+    --card-padding:10px;
+    --card-margin:12px;
+    --card-shadow:rgba(46,49,52,.4);
+
+    --nav-width:35vw;
+    --content-width:65vw;
+    --content-rightpad:20vw;
+    --content-rightpad-extra:10vw;
+    --header-height:62px;
+    --window-height:768px;
+    --negative-window-height:calc(0 - var(--window-height));
+
+    --font-size-0: .875rem; /*14px*/
+    --font-size-1: 1rem; /*16px*/
+    --font-size-2: 1.5rem; /*24px*/
+    --font-size-3: 2.25rem; /*36px*/
+    --font-size-4: 3.375rem; /*54px*/
+    --font-size-5: 5.063rem; /*81px*/
+    --font-size-6: 7.594rem; /*121.5px*/
+
+    --nav-font-size:calc(20px + (120 - 20) * ((100vw - 700px) / (1600 - 600)));
+    --nav-line-height:calc(24px + (104 - 24) * ((100vw - 600px) / (1600 - 600)));
+    --nav-desktop-closed:calc((var(--window-height) - (var(--header-height) + var(--global-layout-pad-total))));
+    --mobile-breakpoint:900px;
+  
+}
+
+
+
+@media screen and (max-width: 900px) { /*basically mobile*/
+     :root {
+      --global-element-pad: 5px;
+
+      --top-nav-a-hpad:20px;
+      --top-nav-a-vpad:10px;
+      
+      --card-margin:10px;
+
+        --font-size-1: 1rem; /*16px*/
+        --font-size-2: 1.125rem; /*18px*/
+        --font-size-3: 1.5rem; /*24px*/
+        --font-size-4: 2.25rem; /*36px*/
+        --font-size-5: 3.375rem; /*54px*/
+        --font-size-6: 5.063rem; /*81px*/
+        --font-size-7: 7.594rem; /*121.5px*/
+
+        --nav-font-size: var(--font-size-6);
+        --nav-line-height: calc(var(--font-size-6) * .9);
+    }
+}

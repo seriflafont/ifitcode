@@ -1,0 +1,13 @@
+.carouselwrapper{
+    overflow: hidden;
+    background:var(--color-lightgrey);
+}
+.carousel{
+    width:150vw;
+    margin-left:-25vw;
+}
+.carousel li{
+    flex-grow: 1;
+    padding:50px;
+    text-align:center;
+}

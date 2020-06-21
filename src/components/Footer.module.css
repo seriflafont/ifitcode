@@ -1,0 +1,90 @@
+
+.footerwrapper{
+    background:var(--color-black);
+    color:var(--color-white);
+    font-size: var(--font-size-0);
+    position: relative;
+}
+.sitelinks{
+    display:flex;
+    justify-content: center;
+    padding: var(--global-module-pad) 0;
+}
+
+.sitelinks dl{
+    width: 20vw;
+   
+}
+.sitelinks dl:last-child{
+    width:auto;
+}
+.sitelinks dt{
+    font-weight: 600;
+}
+.sitelinks dt, .sitelinks dd {
+    margin:0;
+    padding:5px;
+}
+
+.legal{
+    padding: calc(var(--global-module-pad) / 2);
+    display:flex;
+    justify-content: center;
+}
+
+.legal li{
+    margin:0 var(--global-element-pad);
+}
+
+.social{
+    composes: legal;
+    border-bottom:1px solid var(--color-grey);
+    border-top:1px solid var(--color-grey);
+}
+
+
+.langbutton{
+    position: absolute;
+    bottom: calc(var(--global-module-pad) / 2);
+    left: calc(var(--global-module-pad) / 2);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border:0;
+    padding:0 20px 0 0;
+    margin:0;
+    cursor: pointer;
+    color:inherit;
+    font-size: inherit;
+    text-transform:none;
+    font-weight: 600;
+    background-image:url('../assets/icons/chevron-down.png');
+    background-repeat: no-repeat;
+    background-position:right center;
+    background-color:transparent;
+}
+.langbutton:focus{
+    outline:none;
+}
+
+@media screen and (max-width: 500px) { /*basically mobile*/
+    .sitelinks{
+        flex-wrap: wrap;
+    }
+    .sitelinks dl{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .langbutton{
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid var(--color-grey);
+        left: 0;
+        bottom: auto;
+        padding: calc(var(--global-module-pad) / 2);
+        background-position: 94%;
+    }
+}
