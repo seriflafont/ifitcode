@@ -28,7 +28,7 @@
     line-height:var(--hero-line-height);
     color:var(--color-white);
     width:60%;
-    margin:0 auto var(--global-module-pad);
+    margin:0 auto 5vh;
 }
 .herocontent button{
     padding-right:var(--global-module-pad);

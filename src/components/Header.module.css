@@ -42,3 +42,9 @@
     }
     
 }
+@media screen and (max-width: 500px) { /*small mobile*/
+    .nav a{
+        font-size:.75rem; 
+        /* don't like doing this but doing this for time's sake */
+    }
+}

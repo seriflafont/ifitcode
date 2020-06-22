@@ -44,7 +44,7 @@
       
       --card-margin:10px;
 
-        --font-size-1: 1rem; /*16px*/
+      --font-size-1: 1rem; /*16px*/
         --font-size-2: 1.125rem; /*18px*/
         --font-size-3: 1.5rem; /*24px*/
         --font-size-4: 2.25rem; /*36px*/
@@ -55,4 +55,14 @@
         --hero-font-size: var(--font-size-4);
         --hero-line-height: calc(var(--font-size-4) * 1.4);
     }
+}
+
+
+@media screen and (max-width: 500px) { /*small mobile*/
+    :root {
+     
+        --top-nav-a-hpad:12px;
+       --hero-font-size: var(--font-size-3);
+       --hero-line-height: calc(var(--font-size-3) * 1.4);
+   }
 }
